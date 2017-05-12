@@ -6,8 +6,12 @@ function arrayNumber(inputNumber) {
   // }
   // console.log(typeof inputNumber);
   for(var index = 1; index <= inputNumber; index += 1) {
-    if(index % 3 === 0) {
+    if (index % 5 === 0) {
+      numberArray.push("Pong");
+
+    } else if (index % 3 === 0) {
       numberArray.push("Ping");
+
     } else {
     numberArray.push(index);
     }

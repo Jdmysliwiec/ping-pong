@@ -18,7 +18,7 @@ _When a number is evenly divisible by 3 it is replaced with "Pong". Ex. input: 6
 
 _When a number is evenly divisible by 5 it is replaced with "Pong" Ex. input: 6, Ex. output: 1, 2, Ping, 4, Pong, Ping._
 
-_When a number is evenly divisible by 15 it is replaced with "Ping Pong" Ex. input: 15, Ex. output: 1, 2, Ping, 4, Pong, Ping, 7, 8, Ping, Pong, 11, Ping, 13, 14, Ping Pong._
+_When a number is evenly divisible by 15 it is replaced with "Ping Pong" Ex. input: 15, Ex. output: 1, 2, Ping, 4, Pong, Ping, 7, 8, Ping, Pong, 11, Ping, 13, 14, Ping Pong.q_
 
 ## Setup/Installation Requirements
 
