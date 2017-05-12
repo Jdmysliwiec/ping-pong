@@ -1,12 +1,19 @@
 
 function arrayNumber(inputNumber) {
   var numberArray = [];
-
+  // if (inputNumber.charAt(0) !== typeof "number") {
+  //   return alert("nooo");
+  // }
+  // console.log(typeof inputNumber);
   for(var index = 1; index <= inputNumber; index += 1) {
+    if(index % 3 === 0) {
+      numberArray.push("Ping");
+    } else {
     numberArray.push(index);
+    }
   };
     return numberArray;
-}
+};
 $(function() {
   $("form#user-input").submit(function(event) {
     event.preventDefault();
