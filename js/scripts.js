@@ -29,10 +29,13 @@ $(function() {
 
     var inputNumber = parseInt($("input#inputNumber").val());
     var results = arrayNumber(inputNumber);
+    $("input#inputNumber").val("")
 
+    $("ul#output").html("");
     results.forEach(function(result){
       $("ul#output").append("<li>" + result + "</li>");
     });
+
     // $("ul#output").append("<li>" + results + "</li>");
   });
 });
