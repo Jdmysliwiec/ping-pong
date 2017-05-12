@@ -1,16 +1,18 @@
-// function createArray() {
-//   var inputArray = [];
-//   for (var i = 0; i < "inputNumber"; i++) {
-//     inputArray.push(i);
-//   }
-//   console.log(inputArray
-// }
+
+function arrayNumber(inputNumber) {
+  var numberArray = [];
+
+  for(var index = 1; index <= inputNumber; index += 1) {
+    numberArray.push(index);
+  };
+    return numberArray;
+}
 $(function() {
   $("form#user-input").submit(function(event) {
     event.preventDefault();
 
     var inputNumber = parseInt($("input#inputNumber").val());
-    var outputArray = inputNumber;
-    $("ul#output").append("<li>" + outputArray + "</li>");
+    var result = arrayNumber(inputNumber);
+    $("ul#output").append("<li>" + result + "</li>");
   });
 });
