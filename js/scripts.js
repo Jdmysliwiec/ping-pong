@@ -22,12 +22,17 @@ function arrayNumber(inputNumber) {
   };
     return numberArray;
 };
+
 $(function() {
   $("form#user-input").submit(function(event) {
     event.preventDefault();
 
     var inputNumber = parseInt($("input#inputNumber").val());
-    var result = arrayNumber(inputNumber);
-    $("ul#output").append("<li>" + result + "</li>");
+    var results = arrayNumber(inputNumber);
+
+    results.forEach(function(result){
+      $("ul#output").append("<li>" + result + "</li>");
+    });
+    // $("ul#output").append("<li>" + results + "</li>");
   });
 });
