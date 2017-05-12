@@ -27,7 +27,7 @@ _When a number is evenly divisible by 15 it is replaced with "Ping Pong" Ex. inp
 
 ## Known Bugs
 
-_No known bugs_
+_Spec 1 not passing, Could not evaluate input after parseInt is applied_
 
 ## Technologies Used
 

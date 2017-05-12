@@ -18,7 +18,6 @@ function arrayNumber(inputNumber) {
     } else {
     numberArray.push(index);
     }
-    console.log(numberArray);
   };
     return numberArray;
 };
@@ -32,10 +31,8 @@ $(function() {
     $("input#inputNumber").val("")
 
     $("ul#output").html("");
-    results.forEach(function(result){
+    results.forEach(function(result) {
       $("ul#output").append("<li>" + result + "</li>");
     });
-
-    // $("ul#output").append("<li>" + results + "</li>");
   });
 });
